@@ -1,0 +1,4 @@
+rm -rf dist build */*.egg-info *.egg-info
+python setup.py sdist bdist_wheel
+
+twine upload --repository-url https://upload.pypi.org/legacy/ dist/*

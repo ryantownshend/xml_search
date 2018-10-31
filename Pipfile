@@ -1,0 +1,11 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "xml_search"
+
+
+[packages]
+click           = ">= 6.7"
+click_log       = ">= 0.2.0"
+lxml			= ">= 3.7.3"
+
