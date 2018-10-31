@@ -4,7 +4,6 @@ import logging
 import click
 import click_log
 from lxml import etree
-from . import print_version
 
 log = logging.getLogger(__name__)
 click_log.basic_config(log)
@@ -174,15 +173,6 @@ def preprocess_path(path, ns_entry):
 
 
 @click.command()
-@click.option(
-    '--version',
-    'version',
-    is_flag=True,
-    callback=print_version,
-    expose_value=False,
-    help="show version",
-    is_eager=True
-)
 @click.argument(
     'path',
     # required=False
